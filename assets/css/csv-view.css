@@ -1,0 +1,19 @@
+
+body { 
+    background-color: #fafafa; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div{
+    margin: 15px
+}
+    
+.container { 
+    margin: 150px auto; 
+}
+    
+thead th {
+    cursor: pointer; 
+}

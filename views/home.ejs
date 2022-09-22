@@ -1,0 +1,43 @@
+<div>
+
+    <div>
+  
+      <form action="/uploadfile" enctype="multipart/form-data" method="post">
+  
+        <fieldset>
+          <legend>
+            Upload csv file
+          </legend>
+          <input type="file" name="myFile" accept='.csv'>
+          <input type="submit" value="Upload CSV">
+  
+        </fieldset>
+      </form>
+  
+    </div>
+  
+  
+  
+  
+    <div>
+      <fieldset>
+        <legend>
+          Files :
+        </legend>
+        <ul>
+  
+          <% for(let i=0; i< files.length; i++){ %>
+            <li> <a href="csv-view<%= files[i].path.substring(9) %>">
+                <%= files[i].file %>
+              </a> </li>
+            <% } %>
+  
+        </ul>
+      </fieldset>
+  
+  
+    </div>
+  
+  
+  
+  </div>
