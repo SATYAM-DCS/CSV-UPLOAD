@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 // connect mongoose 
 // mongoose.connect(process.env.localdb);
-mongoose.connect(`mongodb://localhost/${process.env.DATABASE}`);          //process.env.DATABASE);
+mongoose.connect(process.env.MONGODB);          //process.env.DATABASE);
 
 const db = mongoose.connection;
 
