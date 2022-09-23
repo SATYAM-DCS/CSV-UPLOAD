@@ -6,7 +6,11 @@ const dbURL = "mongodb+srv://SATYAMDCS:Qazwsx123%40@cluster0.s9qyivh.mongodb.net
 
 // connect mongoose 
 // mongoose.connect(process.env.localdb);
-mongoose.connect(process.env.dbURL);          //process.env.DATABASE);
+mongoose.connect(process.env.dbURL,{
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true,
+});
 
 const db = mongoose.connection;
 

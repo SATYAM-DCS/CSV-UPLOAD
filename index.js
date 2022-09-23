@@ -33,7 +33,7 @@ app.use('/', require('./router'));
 
 
 // start surver on port
-app.listen(port, (err)=>{
+app.listen(process.env.PORT, (err)=>{
     if(err){
         console.log(`Error in running Surver : ${port}`);
         return;
