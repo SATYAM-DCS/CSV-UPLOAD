@@ -2,11 +2,11 @@ require('dotenv').config()
 
 // require mongoose
 const mongoose = require('mongoose');
-const dbURL = "mongodb+srv://SATYAMDCS:Qazwsx123%40@cluster0.s9qyivh.mongodb.net/?retryWrites=true&w=majority"
+const dbUrl = process.env.dbURL;
 
 // connect mongoose 
 // mongoose.connect(process.env.localdb);
-mongoose.connect(process.env.dbURL,{
+mongoose.connect(dbUrl,{
     useUnifiedTopology: true,
    // useNewUrlParser: true,
    // useCreateIndex: true,
