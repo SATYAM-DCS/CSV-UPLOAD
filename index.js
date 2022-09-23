@@ -35,8 +35,8 @@ app.use('/', require('./router'));
 // start surver on port
 app.listen(process.env.PORT, (err)=>{
     if(err){
-        console.log(`Error in running Surver : ${port}`);
+        console.log(`Error in running Surver : ${process.env.PORT}`);
         return;
     }
-    console.log(`Surver is running on port : ${port}`);
+    console.log(`Surver is running on port : ${process.env.PORT}`);
 })
